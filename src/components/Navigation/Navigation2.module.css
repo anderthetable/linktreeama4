@@ -5,13 +5,16 @@
     margin: auto;
 }
 .nav_items_left {
-   text-align: left; 
+   text-align: left;
+   flex: 1;
 }
 
 .nav_items_center {
     text-align: center;
+    flex: 1;
 }
 
 .nav_items_right {
     text-align: right;
+    flex: 1;
 }
