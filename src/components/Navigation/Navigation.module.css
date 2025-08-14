@@ -1,7 +1,19 @@
 .nav_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 1rem;
     margin: auto;
+}
+.nav_items_left {
+   text-align: left; 
+}
+
+.nav_items_center {
+    text-align: center;
+}
+
+.nav_items_right {
+    text-align: right;
 }
