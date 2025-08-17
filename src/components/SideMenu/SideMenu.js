@@ -1,3 +1,5 @@
+import styles from './SideMenu.module.css'
+
 export default function SideMenu() {
     const hamburguer_btn = document.getElementById('hamburguer-btn')
     const close_btn = document.getElementById('close-btn')
@@ -7,13 +9,13 @@ export default function SideMenu() {
     const openMenu = () => {
         console.log('openMenu')
 
-        side_menu.classList.add('active')
-        overlay.classList.add('active')
+        side_menu.classList.add(styles.active)
+        overlay.classList.add(styles.active)
         document.body.style.overflow = 'hidden';
     }
     const closeMenu = () => {
-        side_menu.classList.remove('active')
-        overlay.classList.remove('active')
+        side_menu.classList.remove(styles.active)
+        overlay.classList.remove(styles.active)
         document.body.style.overflow = '';
     }
 
