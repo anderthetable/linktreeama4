@@ -5,6 +5,8 @@ export default function SideMenu() {
     const overlay = document.getElementById('menu-overlay')
 
     const openMenu = () => {
+        console.log('openMenu')
+
         side_menu.classList.add('active')
         overlay.classList.add('active')
         document.body.style.overflow = 'hidden';
