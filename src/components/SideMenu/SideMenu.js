@@ -17,6 +17,4 @@ export default function SideMenu() {
 
     hamburguer_btn.addEventListener('click', openMenu)
     close_btn.addEventListener('click', closeMenu)
-
-
 }

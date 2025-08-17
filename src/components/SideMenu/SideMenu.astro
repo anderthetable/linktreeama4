@@ -2,39 +2,39 @@
 import styles from './SideMenu.module.css'
 ---
 
-<div class="{styles.menu-overlay}" id="menu-overlay"></div>
+<div class={styles.menu_overlay} id="menu-overlay"></div>
 
-<div class="{styles.side-menu}" id="side-menu">
-    <div class="{styles.menu-header}">
-        <div class="{styles.menu-title}">Menú Principal</div>
-        <button class="{styles.close-btn}" id="close-btn">✕</button>
+<div class={styles.side_menu} id="side-menu">
+    <div class={styles.menu_header}>
+        <div class={styles.menu_title}>Menú Principal</div>
+        <button class={styles.close_btn} id="close-btn">✕</button>
     </div>
         
-    <div class="{styles.menu-items}">
-        <a href="#" class="{styles.menu-item}">🏠 Inicio</a>
-        <a href="#" class="{styles.menu-item}">📋 Productos</a>
-        <a href="#" class="{styles.menu-item}">🏷️ Ofertas</a>
-        <a href="#" class="{styles.menu-item}">📞 Contacto</a>
-        <a href="#" class="{styles.menu-item}">ℹ️ Acerca de</a>
+    <div class={styles.menu_items}>
+        <a href="#" class={styles.menu_item}>🏠 Inicio</a>
+        <a href="#" class={styles.menu_item}>📋 Productos</a>
+        <a href="#" class={styles.menu_item}>🏷️ Ofertas</a>
+        <a href="#" class={styles.menu_item}>📞 Contacto</a>
+        <a href="#" class={styles.menu_item}>ℹ️ Acerca de</a>
             
-        <div class="{styles.menu-section}">
-            <div class="{styles.menu-section-title}">Categorías</div>
-            <a href="#" class="{styles.menu-item}">👕 Ropa</a>
-            <a href="#" class="{styles.menu-item}">👟 Calzado</a>
-            <a href="#" class="{styles.menu-item}">💼 Accesorios</a>
-            <a href="#" class="{styles.menu-item}">🎯 Deportes</a>
+        <div class={styles.menu_section}>
+            <div class={styles.menu_section_title}>Categorías</div>
+            <a href="#" class={styles.menu_item}>👕 Ropa</a>
+            <a href="#" class={styles.menu_item}>👟 Calzado</a>
+            <a href="#" class={styles.menu_item}>💼 Accesorios</a>
+            <a href="#" class={styles.menu_item}>🎯 Deportes</a>
         </div>
 
-        <div class="{styles.menu-section}">
-            <div class="{styles.menu-section-title}">Mi Cuenta</div>
-            <a href="#" class="{styles.menu-item}">👤 Perfil</a>
-            <a href="#" class="{styles.menu-item}">📦 Mis Pedidos</a>
-            <a href="#" class="{styles.menu-item}">❤️ Lista de Deseos</a>
-            <a href="#" class="{styles.menu-item}">🔧 Configuración</a>
+        <div class={styles.menu_section}>
+            <div class={styles.menu_section_title}>Mi Cuenta</div>
+            <a href="#" class={styles.menu_item}>👤 Perfil</a>
+            <a href="#" class={styles.menu_item}>📦 Mis Pedidos</a>
+            <a href="#" class={styles.menu_item}>❤️ Lista de Deseos</a>
+            <a href="#" class={styles.menu_item}>🔧 Configuración</a>
         </div>
     </div>
 </div>
-<script src="./SideMenu.js"></script>
+
 <script>
     import SideMenu from './SideMenu.js'
     SideMenu()
