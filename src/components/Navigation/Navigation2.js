@@ -7,6 +7,7 @@ export default function Dropdown(){
         const menu = dropdown.querySelector(styles.dropdown_menu)
         dropdown.addEventListener('mouseenter', () => {
             menu.style.display = 'block'
+            menu.style.opacity = '1';
         })
 
 
