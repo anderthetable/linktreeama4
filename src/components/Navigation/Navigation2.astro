@@ -8,7 +8,15 @@ import styles from './Navigation2.module.css'
             <button id="hamburguer-btn" class={styles.button}>☰</button>
             <ul>
                 <li>Inicio</li>
-                <li>Temu</li>
+                <li class={styles.dropdown}>
+                    <span>Temu</span> 
+                    <div class={styles.dropdown_menu}>
+                        <a href="#">Electrónicos</a>
+                        <a href="#">Hogar y Jardín</a>
+                        <a href="#">Ropa</a>
+                        <a href="#">Deportes</a>
+                    </div>
+                </li>
                 <li>Aliexpress</li>
                 <li>Amazon</li>
                 <li>Vinted</li>
@@ -26,3 +34,8 @@ import styles from './Navigation2.module.css'
         </div>
     </div>
 </nav>
+
+<script>
+    import Dropdown from './Navigation2.js'
+    Dropdown()
+</script>
