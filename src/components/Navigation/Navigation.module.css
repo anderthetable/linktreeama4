@@ -4,14 +4,25 @@
     padding: 0.6rem 1rem;
     margin: auto;
 }
-.nav_items_left {
-   text-align: left; 
+.nav_items_left,
+.nav_items_center,
+.nav_items_right {
+    display: flex;
+    flex: 1;
+}
+
+.nav_items_left{
+    justify-content: flex-start;
 }
 
 .nav_items_center {
-    text-align: center;
+    justify-content: center;
 }
 
 .nav_items_right {
-    text-align: right;
+    justify-content: flex-end;
+}
+
+.button{
+    display: flex;
 }
