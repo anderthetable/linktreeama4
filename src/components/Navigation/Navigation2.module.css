@@ -37,7 +37,10 @@
 .button{
     display: flex;
 }
+.dropdown{
+    position: relative;
 
+}
 .dropdown_menu {
     position: absolute;
     top: 100%;
