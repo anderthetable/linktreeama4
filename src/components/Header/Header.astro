@@ -1,13 +1,21 @@
 ---
 import styles from './Header2.module.css'
 import Navigation2 from '../Navigation/Navigation2.astro'
+import Navigation from '../Navigation/Navigation.astro'
 import SideMenu from '../SideMenu/SideMenu.astro'
+
+const {variante} = Astro.props;
+const NAVS={
+    default: Navigation,
+    v2: Navigation2,
+}
+const Nav = NAVS[variante] || NAVS.default
 ---
 
 <header class={styles.header}>
     <div class={styles.logo_container}>
         <img src="/logo_header.jpg" class={styles.logo_image}>
     </div>
-    <Navigation2 />
+    <Nav />
 </header>
 <SideMenu />
