@@ -1,7 +1,10 @@
 ---
 import Header from '../components/Header/Header.astro';
-import	ProductCard from 'components/ProductCard/ProductCard.astro'
+import	ProductCard from '../components/ProductCard/ProductCard.astro'
 import "../global.css"
+import { fetchAllProducts } from "../services/strapi.js";
+
+const products = await fetchAllProducts();
 ---
 
 <html lang="en">

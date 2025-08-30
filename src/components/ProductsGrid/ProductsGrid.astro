@@ -1,0 +1,10 @@
+---
+import	ProductCard from '../components/ProductCard/ProductCard.astro'
+const {products} = Astro.props
+---
+<section>
+    <h2>Productos</h2>
+    {products.map(product =>(
+        <ProductCard product={product}/>
+    ))}
+</section>
