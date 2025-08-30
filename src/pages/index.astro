@@ -1,6 +1,6 @@
 ---
 import Header from '../components/Header/Header.astro';
-import	ProductCard from '../components/ProductCard/ProductCard.astro'
+import	ProductsGrid from '../components/ProductsGrid/ProductsGrid.astro'
 import "../global.css"
 import { fetchAllProducts } from "../services/strapi.js";
 
@@ -17,7 +17,7 @@ const products = await fetchAllProducts();
 	</head>
 	<body>
 		<Header variante="v2"/>
-		<ProductCard />
+		<ProductsGrid products={products}/>
 		<h1>Astro</h1>
 	</body>
 </html>
